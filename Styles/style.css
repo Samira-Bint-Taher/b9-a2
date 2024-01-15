@@ -20,10 +20,23 @@ nav {
     align-items: center;
 }
 
+nav img {
+    width: 50px;
+    height: 30.008px;
+    margin-top: 25px;
+}
+
 .nav-title {
     display: flex;
     gap: 10px;
     color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+nav span {
+    color: #FF5400;
     font-family: Mulish;
     font-size: 20px;
     font-weight: 800;
@@ -36,11 +49,73 @@ nav>ul {
 nav li {
     list-style: none;
     margin-right: 30px;
-    font-weight: 500;
+    font-family: Mulish;
+    font-weight: 400;
     font-size: 1rem;
 }
 
 nav li a {
     text-decoration: none;
     color: #424242;
+}
+
+/* banner styles */
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group13.png');
+    border-radius: 16px;
+    background-size: 1170px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+.banner-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+h2 span {
+    color: #FF5400;
+}
+.banner-description {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.input-box {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: #ffffff4d;
+    margin-left: 200px;
+}
+.input-box input,
+select,
+button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    border-color: #ffffff4d;
+}
+.input-box button {
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
 }
