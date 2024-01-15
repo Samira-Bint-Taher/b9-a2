@@ -68,21 +68,25 @@ nav li a {
     background-position: center;
     height: 500px;
 }
+
 .banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0px auto;
     padding: 20px;
 }
+
 .banner-title {
     color: #FFF;
     font-family: Mulish;
     font-size: 3.5rem;
     font-weight: 800;
 }
+
 h2 span {
     color: #FF5400;
 }
+
 .banner-description {
     color: #FFF;
     font-family: Mulish;
@@ -97,8 +101,9 @@ h2 span {
     gap: 24px;
     border-radius: 8px;
     background: #ffffff4d;
-    margin-left: 200px;
+    margin: 0 200px;
 }
+
 .input-box input,
 select,
 button {
@@ -112,10 +117,45 @@ button {
     font-weight: 400;
     border-color: #ffffff4d;
 }
+
 .input-box button {
     background: #FF5400;
     color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
+}
+
+/* responsive media query */
+@media screen and (max-width:600px) {
+    .container {
+        max-width: 335px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        font-size: 22px;
+    }
+
+    .banner-description {
+        font-size: 10px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+
+    .input-box input,
+    select,
+    button {
+        height: 30px;
+    }
 }
