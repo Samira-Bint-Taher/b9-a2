@@ -12,6 +12,16 @@
     font-family: 'Mulish';
 }
 
+button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+}
+
 /* header styles */
 /* nav styles */
 nav {
@@ -105,8 +115,7 @@ h2 span {
 }
 
 .input-box input,
-select,
-button {
+select {
     width: 174px;
     height: 52px;
     border-radius: 8px;
@@ -119,32 +128,72 @@ button {
 }
 
 .input-box button {
-    background: #FF5400;
-    color: #FFF;
-    text-align: center;
     font-size: 16px;
     font-weight: 700;
+}
+
+/* Our popular tours styles */
+.fame-tour {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.fame-tour-content {
+    width: 50%;
+    text-align: justify;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fame-tour-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.fame-tour-content button {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.fame-tour img {
+    width: 540px;
+    height: 560px;
+    border-radius: 16px;
 }
 
 /* responsive media query */
 @media screen and (max-width:600px) {
     .container {
         max-width: 335px;
+        margin: 0 auto;
     }
 
     header {
         padding: 20px;
     }
 
-    nav>ul {
+    nav>ul,
+    .fame-tour {
         flex-direction: column;
     }
 
-    .banner-title {
+    .banner {
+        width: 335px;
+        height: 483px;
+    }
+
+    .banner-title,
+    .fame-tour-title {
         font-size: 22px;
     }
 
-    .banner-description {
+    .banner-description,
+    .fame-tour-content {
         font-size: 10px;
     }
 
@@ -152,10 +201,20 @@ button {
         flex-direction: column;
         margin: 0 50px;
     }
-
     .input-box input,
     select,
     button {
         height: 30px;
+    }
+    .fame-tour{
+        padding-top:5px;
+    }
+    .fame-tour-content {
+        width: 335px;
+    }
+    .fame-tour img {
+        padding-top: 24px;
+        width: 335px;
+        height: 342px;
     }
 }
