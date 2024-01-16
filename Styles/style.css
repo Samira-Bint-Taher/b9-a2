@@ -304,7 +304,6 @@ select {
         width: 335px;
         height: 342px;
     }
-
     .row {
         flex-direction: column;
         position: relative;
@@ -312,7 +311,9 @@ select {
         margin-bottom:270px;
         
     }
-
+    #row1{
+        margin-bottom: 70px;
+    }
     .row img {
         width: 335px;
         height: 176px;
