@@ -331,7 +331,45 @@ select {
     line-height: 26px;
     /* 162.5% */
 }
+/* perfect place */
+.perfect-place {
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom: 70px;
+}
 
+.perfect-place-content {
+    width: 50%;
+    text-align: justify;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.perfect-place-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.perfect-place-content button {
+    font-size: 20px;
+    font-weight: 800;
+}
+video{
+    padding-top:100px;
+    position: relative;
+}
+.video-des{
+    position: absolute;
+    top:3740px;
+    left: 820px;
+    background-color:white;
+    font-size: 20px;
+}
 /* Newsletter styles */
 .newsletter {
     display: flex;
@@ -495,7 +533,8 @@ hr.line1 {
     }
 
     .fame-tour,
-    .row1, .newsletter {
+    .row1, .newsletter, 
+    .perfect-place {
         flex-direction: column;
     }
 
@@ -506,6 +545,7 @@ hr.line1 {
 
     .banner-title,
     .fame-tour-title,
+    .perfect-place-title
     .choose-title,
     .choose-us-title,
     .row1 h4,
@@ -523,6 +563,7 @@ hr.line1 {
     .row1 p,
     .row2 p,
     .footer-des,
+    .perfect-place-des, 
     .discount p {
         font-size: 10px;
     }
@@ -539,20 +580,32 @@ hr.line1 {
     }
 
     .fame-tour,
-    .choose-content {
+    .choose-content,
+    .perfect-place-content {
         padding-top: 5px;
     }
 
-    .fame-tour-content {
+    .fame-tour-content, 
+    .perfect-place-content {
         width: 335px;
     }
-
+    .video-des{
+        position: absolute;
+        top:4880px;
+        left:175px;
+        font-size:15px;
+    }
     .fame-tour img {
         padding-top: 24px;
         width: 335px;
         height: 342px;
     }
-
+    .perfect-place video {
+        padding-top: 24px;
+        width: 335px;
+        height: 200px;
+    }
+    
     .row {
         flex-direction: column;
         position: relative;
