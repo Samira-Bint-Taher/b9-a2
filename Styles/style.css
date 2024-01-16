@@ -166,6 +166,86 @@ select {
     border-radius: 16px;
 }
 
+/* choose your destination styles */
+.choose-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 70px;
+}
+
+.choose-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.choose-des {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.row img {
+    width: 100%;
+    height: 100%
+}
+
+.row {
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.row>div {
+    flex-grow: 1;
+}
+
+.overlay-1,
+.overlay-2,
+.overlay-3,
+.overlay-4,
+.overlay-5,
+.overlay-6,
+.overlay-7 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.overlay-2 {
+    left: 75%;
+}
+
+.overlay-3 {
+    left: 17%;
+}
+
+.overlay-4 {
+    left: 55%;
+}
+
+.overlay-5 {
+    left: 89%;
+}
+
+.overlay-6 {
+    left: 20%;
+}
+
+.overlay-7 {
+    left: 72%;
+}
+
 /* responsive media query */
 @media screen and (max-width:600px) {
     .container {
@@ -188,12 +268,14 @@ select {
     }
 
     .banner-title,
-    .fame-tour-title {
+    .fame-tour-title,
+    .choose-title {
         font-size: 22px;
     }
 
     .banner-description,
-    .fame-tour-content {
+    .fame-tour-content,
+    .choose-des {
         font-size: 10px;
     }
 
@@ -201,20 +283,74 @@ select {
         flex-direction: column;
         margin: 0 50px;
     }
+
     .input-box input,
     select,
     button {
         height: 30px;
     }
-    .fame-tour{
-        padding-top:5px;
+
+    .fame-tour,
+    .choose-content {
+        padding-top: 5px;
     }
+
     .fame-tour-content {
         width: 335px;
     }
+
     .fame-tour img {
         padding-top: 24px;
         width: 335px;
         height: 342px;
+    }
+
+    .row {
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+        margin-bottom:270px;
+        
+    }
+
+    .row img {
+        width: 335px;
+        height: 176px;
+    }
+    .overlay-1,
+    .overlay-2,
+    .overlay-3,
+    .overlay-4,
+    .overlay-5,
+    .overlay-6,
+    .overlay-7 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .overlay-2 {
+        top: 90%;
+    }
+
+    .overlay-3 {
+        top: 30%;
+    }
+
+    .overlay-4 {
+        top: 95%;
+    }
+    .overlay-5 {
+        top: 155%;
+    }
+    .overlay-6 {
+        top:30%;
+    }
+
+    .overlay-7 {
+        top:90%;
     }
 }
