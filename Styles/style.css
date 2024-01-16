@@ -56,6 +56,10 @@ nav>ul {
     display: flex;
 }
 
+.nav-icon {
+    display: none;
+}
+
 nav li {
     list-style: none;
     margin-right: 30px;
@@ -257,7 +261,15 @@ select {
         padding: 20px;
     }
 
-    nav>ul,
+    .nav-icon {
+        display: block;
+       margin-left:130px;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
     .fame-tour {
         flex-direction: column;
     }
@@ -304,20 +316,24 @@ select {
         width: 335px;
         height: 342px;
     }
+
     .row {
         flex-direction: column;
         position: relative;
         gap: 10px;
-        margin-bottom:270px;
-        
+        margin-bottom: 270px;
+
     }
-    #row1{
+
+    #row1 {
         margin-bottom: 70px;
     }
+
     .row img {
         width: 335px;
         height: 176px;
     }
+
     .overlay-1,
     .overlay-2,
     .overlay-3,
@@ -344,14 +360,16 @@ select {
     .overlay-4 {
         top: 95%;
     }
+
     .overlay-5 {
         top: 155%;
     }
+
     .overlay-6 {
-        top:30%;
+        top: 30%;
     }
 
     .overlay-7 {
-        top:90%;
+        top: 90%;
     }
 }
