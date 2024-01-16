@@ -256,7 +256,7 @@ select {
 }
 
 .choose-box {
-    margin-bottom: 500px;
+    margin-bottom: 400px;
 }
 
 .choose-us-content {
@@ -337,7 +337,7 @@ select {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    margin-bottom: 70px;
+    margin-bottom:70px;
 }
 
 .newsletter-content {
@@ -622,6 +622,9 @@ hr.line1 {
 
     .row2 {
         left: 125px;
+    }
+    .newsletter {
+        margin:auto;
     }
     .newsletter-content input,
     .newsletter-content button{
